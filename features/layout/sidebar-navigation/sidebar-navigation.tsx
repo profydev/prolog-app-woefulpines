@@ -19,18 +19,18 @@ const menuItems = [
 export function SidebarNavigation() {
   const router = useRouter();
   const { isSidebarCollapsed, toggleSidebar } = useContext(NavigationContext);
-  const [ isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [ isMobileDisplay, setMobileDisplay] = useState(false);
-  
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isMobileDisplay, setMobileDisplay] = useState(false);
+
   useEffect(() => {
-    function handleResize(){
-      //setMobileMenuOpen(window.innerWidth < 1024); 
+    function handleResize() {
+      //setMobileMenuOpen(window.innerWidth < 1024);
       setMobileDisplay(window.innerWidth < 1024);
     }
 
     setMobileDisplay(window.innerWidth < 1024);
     window.onresize = handleResize;
-    });
+  });
 
   return (
     <div
@@ -49,8 +49,10 @@ export function SidebarNavigation() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={
-              isSidebarCollapsed 
-                ? (isMobileDisplay? "/icons/logo-large.svg" : "icons/logo-small.svg") 
+              isSidebarCollapsed
+                ? isMobileDisplay
+                  ? "/icons/logo-large.svg"
+                  : "icons/logo-small.svg"
                 : "/icons/logo-large.svg"
             }
             alt="logo"
