@@ -10,6 +10,26 @@ export enum ProjectStatus {
   critical = "critical",
 }
 
+export function statusConversion(aStatus: string) {
+  switch (aStatus) {
+    case "error":
+      return "critical";
+      break;
+
+    case "info":
+      return "stable";
+      break;
+
+    case "warning":
+      return "warning";
+      break;
+
+    default:
+      console.error("Error api returned an invalid status value.");
+      return "critical";
+  }
+}
+
 export type Project = {
   id: string;
   name: string;
