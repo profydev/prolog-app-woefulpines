@@ -25,7 +25,7 @@ const statusColors = {
 export function ProjectCard({ project }: ProjectCardProps) {
   const { name, language, numIssues, numEvents24h, status } = project;
 
-  function statusConversion(aStatus: String) {
+  function statusConversion(aStatus: string) {
     switch (aStatus) {
       case "error":
         return "critical";
