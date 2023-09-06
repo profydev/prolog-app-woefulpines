@@ -2,8 +2,12 @@ import Link from "next/link";
 import capitalize from "lodash/capitalize";
 import { Badge, BadgeColor } from "@features/ui";
 import { Routes } from "@config/routes";
-import { ProjectLanguage, ProjectStatus, statusConversion } from "@api/projects.types";
-import type { Project }  from "@api/projects.types";
+import {
+  ProjectLanguage,
+  ProjectStatus,
+  statusConversion,
+} from "@api/projects.types";
+import type { Project } from "@api/projects.types";
 import styles from "./project-card.module.scss";
 
 type ProjectCardProps = {
@@ -24,8 +28,6 @@ const statusColors = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const { name, language, numIssues, numEvents24h, status } = project;
-
-  
 
   return (
     <div className={styles.container}>
