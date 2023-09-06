@@ -1,12 +1,14 @@
 import {} from "react";
 import styles from "./footer.module.scss";
+import classNames from "classnames";
 
-
-export function footer() {
+export function Footer() {
     console.log("Dummy footer for testing.");
     return (
-        <div>
-            <h1>"Hi I'm the Footer"</h1>
+        <div className={
+            classNames(styles.container)}>
+            <h1>"Hi I'm item 1"</h1>
+            <h1>"Hi I'm item 2"</h1>
             {/* TODO */}
         </div>
     );
