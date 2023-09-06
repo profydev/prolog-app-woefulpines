@@ -25,8 +25,8 @@ const statusColors = {
 export function ProjectCard({ project }: ProjectCardProps) {
   const { name, language, numIssues, numEvents24h, status } = project;
 
-  function statusConversion(aStatus : String){
-    switch(aStatus){
+  function statusConversion(aStatus: String) {
+    switch (aStatus) {
       case "error":
         return "critical";
         break;
@@ -70,7 +70,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
             <div className={styles.issuesNumber}>{numEvents24h}</div>
           </div>
           <div className={styles.status}>
-            <Badge color={statusColors[statusConversion(status)]}>{capitalize(statusConversion(status))}</Badge>
+            <Badge color={statusColors[statusConversion(status)]}>
+              {capitalize(statusConversion(status))}
+            </Badge>
           </div>
         </div>
       </div>
