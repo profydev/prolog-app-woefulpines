@@ -30,7 +30,7 @@ export function SidebarNavigation() {
 
     setMobileDisplay(window.innerWidth < 1024);
     window.onresize = handleResize;
-  });
+  }, []);
 
   return (
     <div
