@@ -44,3 +44,7 @@ yarn-error.log*
 
 # Cypress test videos
 cypress/videos/
+
+#Cypress test examples
+cypress/e2e/1-getting-started/
+cypress/e2e/2-advanced-examples/
