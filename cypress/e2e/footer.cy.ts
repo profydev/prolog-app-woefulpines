@@ -4,12 +4,19 @@ const pages = ["dashboard","dashboard/issues", "dashboard/alerts", "dashboard/us
 function footerContentAssert(){
   cy.get("footer")
     .contains("Docs")
+    .should("have.attr", "href", '#');
+
   cy.get("footer")
     .contains("API")
+    .should("have.attr", "href", '#');
+
   cy.get("footer")
     .contains("Help")
+    .should("have.attr", "href", '#');
+
   cy.get("footer")
-    .contains("Community");
+    .contains("Community")
+    .should("have.attr", "href", '#');
 }
 
 describe('Footer', () => {
