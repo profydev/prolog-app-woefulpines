@@ -10,14 +10,14 @@ export function Footer() {
       </div>
 
       <div className={styles.links}>
-        <a href='#' >Docs</a>
-        <a href='#' >API</a>
-        <a href='#' >Help</a>
-        <a href='#' >Community</a>
+        <a href="#">Docs</a>
+        <a href="#">API</a>
+        <a href="#">Help</a>
+        <a href="#">Community</a>
       </div>
 
       <div className="logo">
-        <img src="/icons/logo-small.svg" alt="Profy dev logo."/>
+        <img src="/icons/logo-small.svg" alt="Profy dev logo." />
       </div>
     </footer>
   );
