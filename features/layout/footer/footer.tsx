@@ -17,7 +17,7 @@ export function Footer() {
         <a href="#">Community</a>
       </div>
 
-      <div className="logo">
+      <div>
         <img src="/icons/logo-small.svg" alt="Profy dev logo." />
       </div>
     </footer>
