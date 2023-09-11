@@ -1,0 +1,33 @@
+@use "@styles/color";
+@use "@styles/font";
+@use "@styles/space";
+@use "@styles/breakpoint";
+@use "@styles/misc";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: color.$gray-50;
+  height: 60px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.links {
+  display: flex;
+  color: black;
+  gap: 24px;
+  position: relative;
+  left: -64px;
+
+  a {
+    color: color.$gray-600;
+    text-decoration: none;
+  }
+}
+
+.version {
+  color: color.$gray-400;
+}
