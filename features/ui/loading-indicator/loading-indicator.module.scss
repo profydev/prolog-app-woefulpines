@@ -1,0 +1,34 @@
+
+.indicatorBackground{
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    animation: rotate 1.5 ease-in-out infinite;
+}
+
+.indicatorSpinner{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: #F9F5FF;
+    border-top-color: #7F56D9;
+    rotate: 45deg;
+    position: absolute;
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

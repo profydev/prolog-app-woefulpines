@@ -4,8 +4,9 @@ import {} from "react"
 
 export function LoadingIndicator() {
     return (
-        <div>
-            Loading
+        <div className={styles.indicatorBackground}>
+            <div className={styles.indicatorSpinner}>
+            </div>
         </div>
     );
 }
