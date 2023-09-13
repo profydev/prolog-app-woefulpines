@@ -8,7 +8,9 @@ export function ProjectList() {
 
   if (isLoading) {
     return (
-      <LoadingIndicator/>
+      <div className={styles.loadContainer}>
+        <LoadingIndicator/>
+      </div>
     )
   } 
 
