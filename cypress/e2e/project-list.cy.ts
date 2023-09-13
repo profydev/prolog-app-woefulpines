@@ -4,30 +4,27 @@ import { statusConversion } from "../../api/projects.types";
 
 describe("Project List", () => {
   beforeEach(() => {
-    let sendResponse : () => void;
+    let sendResponse: () => void;
 
-    const trigger = new Promise<void>( (resolve) => {
+    const trigger = new Promise<void>((resolve) => {
       sendResponse = resolve;
     });
 
     // setup request mock
-    cy.intercept("GET", "https://prolog-api.profy.dev/project", 
-      (req) => {
-        return trigger.then(() => {
-          
-          req.reply({ fixture : "projects.json" })
-        })
-      }
-    ).as("getProjects");
+    cy.intercept("GET", "https://prolog-api.profy.dev/project", (req) => {
+      return trigger.then(() => {
+        req.reply({ fixture: "projects.json" });
+      });
+    }).as("getProjects");
 
     // open projects page
     cy.visit("http://localhost:3000/dashboard");
 
     cy.get("div");
-    
+
     cy.get('[data-testid="loading_indicator"]').then(() => {
-        sendResponse();
-      });
+      sendResponse();
+    });
 
     // wait for request to resolve and test loading indicator
     cy.wait("@getProjects");

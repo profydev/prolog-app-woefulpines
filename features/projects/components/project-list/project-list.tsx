@@ -1,7 +1,7 @@
 import { ProjectCard } from "../project-card";
 import { useGetProjects } from "../../api/use-get-projects";
 import styles from "./project-list.module.scss";
-import { LoadingIndicator } from "@features/ui/loading-indicator";
+import { LoadingIndicator } from "@features/ui";
 
 export function ProjectList() {
   const { data, isLoading, isError, error } = useGetProjects();
@@ -9,10 +9,10 @@ export function ProjectList() {
   if (isLoading) {
     return (
       <div className={styles.loadContainer}>
-        <LoadingIndicator/>
+        <LoadingIndicator />
       </div>
-    )
-  } 
+    );
+  }
 
   if (isError) {
     console.error(error);
