@@ -5,7 +5,7 @@ import {} from "react"
 export function LoadingIndicator() {
     return (
         <div className={styles.indicatorBackground}>
-            <div className={styles.indicatorSpinner}>
+            <div className={styles.indicatorSpinner} data-testid="loading_indicator">
             </div>
         </div>
     );
