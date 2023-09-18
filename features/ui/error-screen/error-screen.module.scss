@@ -1,0 +1,58 @@
+@use "@styles/breakpoint";
+
+
+.errorContainer{
+    display: flex;
+    flex-direction: row;
+    height: 26px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FFFBFA;
+    border: 1px solid;
+    border-color: #FDA29B;
+    padding: 16px;
+    margin-top: 32px;
+    margin-bottom: 48px;
+    font-size: 14px;
+    text-align: left;
+    div {
+        color: #B42318;
+    }
+    @media (min-width: breakpoint.$desktop) {
+        justify-content: space-between;
+    }
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 97%;
+    gap: 12px;
+    margin-left: 10px;
+    
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 12px;
+    text-wrap: nowrap;
+}
+
+.arrow{
+    color:#FDA29B;
+    fill: #FDA29B;
+    max-width: auto;
+    max-height: 12%;
+}
+
+.alert{
+    max-width: auto;
+    max-height: 80%;
+}
