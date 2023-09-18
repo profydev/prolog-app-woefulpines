@@ -14,9 +14,11 @@
   margin-bottom: 48px;
   font-size: 14px;
   text-align: left;
+
   div {
     color: #b42318;
   }
+
   @media (min-width: breakpoint.$desktop) {
     justify-content: space-between;
   }
