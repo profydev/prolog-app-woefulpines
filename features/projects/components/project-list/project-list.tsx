@@ -16,7 +16,10 @@ export function ProjectList() {
 
   if (isError) {
     console.error(error);
-    return <ErrorScreen theError={error}/>;
+    return <ErrorScreen 
+      theError={"There was a problem while loading the project data."} 
+      buttonFunction={() => window.location.reload()}
+      />;
     
   }
 
