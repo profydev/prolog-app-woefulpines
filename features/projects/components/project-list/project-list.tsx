@@ -1,7 +1,7 @@
 import { ProjectCard } from "../project-card";
 import { useGetProjects } from "../../api/use-get-projects";
 import styles from "./project-list.module.scss";
-import { LoadingIndicator } from "@features/ui";
+import { LoadingIndicator, ErrorScreen } from "@features/ui";
 
 export function ProjectList() {
   const { data, isLoading, isError, error } = useGetProjects();
@@ -16,7 +16,12 @@ export function ProjectList() {
 
   if (isError) {
     console.error(error);
-    return <div>Error: {error.message}</div>;
+    return (
+      <ErrorScreen
+        theError={"There was a problem while loading the project data."}
+        buttonFunction={() => window.location.reload()}
+      />
+    );
   }
 
   return (
