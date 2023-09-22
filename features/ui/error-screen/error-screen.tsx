@@ -8,8 +8,12 @@ type ErrorScreenProps = {
 
 export function ErrorScreen({ theError, buttonFunction }: ErrorScreenProps) {
   return (
-    <div className={styles.errorContainer}>
-      <img className={styles.alert} src="/icons/alert-circle.svg" />
+    <div className={styles.errorContainer} data-testid="error_screen">
+      <img
+        className={styles.alert}
+        src="/icons/alert-circle.svg"
+        alt="red exclamation mark inside a red circle"
+      />
 
       <div className={styles.info}>
         <div>{theError}</div>
