@@ -1,3 +1,7 @@
+@use "@styles/color";
+@use "@styles/space";
+@use "@styles/font";
+
 .button {
   cursor: pointer;
 
@@ -16,3 +20,27 @@
     padding: 0;
   }
 }
+
+.primary{
+  color: color.$primary-600;
+
+  :hover{
+    color: color.$primary-700;
+  }
+
+  :focus{
+    color: color.$primary-600;
+    border: 4px;
+    border-color: color.$primary-100;
+  }
+}
+
+.secondary{
+  color: color.$primary-50;
+}
+
+.xl{
+  width: 128px;
+  height: 48px;
+}
+
