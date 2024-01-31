@@ -24,9 +24,28 @@
   align-items: center;
   color: color.$gray-100;
   text-decoration: none;
+  transition-duration: 0.4s;
+
+  &:hover {
+    color: color.$gray-500;
+  }
 }
 
 .icon {
   width: space.$s6;
   margin-right: space.$s3;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  color: color.$gray-100;
+  text-decoration: none;
+  background: transparent;
+  border-color: transparent;
+  transition-duration: 0.4s;
+
+  &:hover {
+    color: color.$gray-500;
+  }
 }

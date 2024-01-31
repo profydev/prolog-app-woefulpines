@@ -58,7 +58,7 @@ export function SidebarNavigation() {
             alt="logo"
             className={styles.logo}
           />
-          <Button
+          <button
             onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
             className={styles.menuButton}
           >
@@ -68,7 +68,7 @@ export function SidebarNavigation() {
               alt={isMobileMenuOpen ? "close menu" : "open menu"}
               className={styles.menuIcon}
             />
-          </Button>
+          </button>
         </header>
         <div
           className={classNames(
