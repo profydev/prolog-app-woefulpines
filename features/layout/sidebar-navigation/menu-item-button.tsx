@@ -20,11 +20,11 @@ export function MenuItemButton({
 }: MenuItemProps) {
   return (
     <li className={classNames(styles.listItem, className)}>
-      <Button className={styles.anchor} onClick={onClick}>
+      <button className={styles.button} onClick={onClick}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img className={styles.icon} src={iconSrc} alt={`${text} icon`} />{" "}
         {!isCollapsed && text}{" "}
-      </Button>
+      </button>
     </li>
   );
 }
