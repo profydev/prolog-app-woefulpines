@@ -3,34 +3,22 @@
 @use "@styles/font";
 
 .button {
-  cursor: pointer;
-
-  /* remove default button styles */
-  border: none;
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  line-height: normal;
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  appearance: none;
-
-  &::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-  }
+  border-radius: 8px;
+  border-width: 4px;
+  border-color: transparent;
+  border-style: solid;
 }
 
 .primary {
-  color: color.$primary-600;
+  background-color: color.$primary-600;
+  color: white;
 
-  :hover {
-    color: color.$primary-700;
+  &:hover {
+    background-color: color.$primary-700;
   }
 
-  :focus {
-    color: color.$primary-600;
-    border: 4px;
+  &:focus {
+    background-color: color.$primary-600;
     border-color: color.$primary-100;
   }
 }
@@ -42,4 +30,9 @@
 .xl {
   width: 128px;
   height: 48px;
+}
+
+.md {
+  width: 109px;
+  height: 40px;
 }
