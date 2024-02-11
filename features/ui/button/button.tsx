@@ -26,11 +26,11 @@ export enum ButtonColor{
 type ButtonProps = {
   buttonSize      : ButtonSize; 
   buttonColor     : ButtonColor;
-} & ButtonHTMLAttributes<HTMLButtonElement>; 
+} 
 
-export function Button({buttonSize, buttonColor, ...props} : ButtonProps){
+export function Button({buttonSize, buttonColor} : ButtonProps){
   return (
-    <button {...props} className={classNames(
+    <button className={classNames(
             styles.button, 
             styles[buttonSize],
             styles[buttonColor])}/>
