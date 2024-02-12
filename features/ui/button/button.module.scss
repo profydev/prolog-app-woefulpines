@@ -2,7 +2,6 @@
 @use "@styles/space";
 @use "@styles/font";
 
-
 /*Base button styling*/
 .button {
   border-radius: 8px;
@@ -36,9 +35,17 @@
   height: 48px;
 }
 
+.lg { 
+  width: 124px;
+  height: 44px;
+}
+
 .md {
   width: 109px;
   height: 40px;
 }
 
-/*Button icon placement styling*/
+.sm{
+  width: 105px;
+  height: 36px;
+}
