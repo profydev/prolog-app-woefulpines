@@ -24,15 +24,18 @@ export enum ButtonColor{
 }
 
 type ButtonProps = {
-  buttonSize      : ButtonSize; 
+  children        : React.ReactNode;
+  buttonSize      : ButtonSize;
   buttonColor     : ButtonColor;
-} 
+};
 
-export function Button({buttonSize, buttonColor} : ButtonProps){
+export function Button({children, buttonSize, buttonColor} : ButtonProps){
   return (
     <button className={classNames(
             styles.button, 
             styles[buttonSize],
-            styles[buttonColor])}/>
+            styles[buttonColor])}>
+    {children}
+    </button>
   );
 }
