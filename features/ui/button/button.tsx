@@ -45,7 +45,12 @@ export function Button({
         styles[textPlacement],
       )}
     >
-      {children}
+      <div>
+        *
+      </div>
+      <div>
+        {children}
+      </div>
     </button>
   );
 }
