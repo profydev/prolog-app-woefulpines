@@ -28,6 +28,8 @@ type ButtonProps = {
   buttonSize: ButtonSize;
   buttonColor: ButtonColor;
   textPlacement: TextPlacement;
+  iconSrc: string;
+  altText: string;
 };
 
 export function Button({
@@ -35,6 +37,8 @@ export function Button({
   buttonSize,
   buttonColor,
   textPlacement,
+  iconSrc = "./public/react.svg",
+  altText = "react logo",
 }: ButtonProps) {
   return (
     <button
@@ -46,11 +50,9 @@ export function Button({
       )}
     >
       <div>
-        *
+        <img className={styles.icon} src={iconSrc} />{" "}
       </div>
-      <div>
-        {children}
-      </div>
+      <div>{children}</div>
     </button>
   );
 }

@@ -2,6 +2,8 @@
 @use "@styles/space";
 @use "@styles/font";
 
+$myHeight: 40px;
+$myWidth: 109px;
 /*Base button styling*/
 .button {
   border-radius: 8px;
@@ -37,32 +39,47 @@
 .xl {
   width: 128px;
   height: 48px;
+
+  $myWidth: 128px;
+  $myHeight: 48px;
 }
 
 .lg {
   width: 124px;
   height: 44px;
+
+  $myWidth: 124px;
+  $myHeight: 44px;
 }
 
 .md {
   width: 109px;
   height: 40px;
+
+  $myWidth: 109px;
+  $myHeight: 40px;
 }
 
 .sm {
   width: 105px;
   height: 36px;
+
+  $myWidth: 105px;
+  $myHeight: 36px;
 }
 
 /*Button text Pacement*/
 .noText {
   font-size: 0;
+  width: $myHeight;
 }
 
 .leading {
   flex-direction: row-reverse;
+  width: $myWidth;
 }
 
 .trailing {
   flex-direction: row;
+  width: $myWidth;
 }
