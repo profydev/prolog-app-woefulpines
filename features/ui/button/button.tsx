@@ -37,7 +37,7 @@ export function Button({
   buttonSize,
   buttonColor,
   textPlacement,
-  iconSrc = "./public/react.svg",
+  iconSrc = "/icons/react.svg",
   altText = "react logo",
 }: ButtonProps) {
   return (

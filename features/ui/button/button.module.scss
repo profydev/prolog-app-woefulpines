@@ -14,6 +14,15 @@ $myWidth: 109px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  .div {
+    height: 50%;
+  }
+
+  .icon{
+    width: 50%;
+  }
+  
 }
 
 /*Implimentation of each color set*/
@@ -76,10 +85,8 @@ $myWidth: 109px;
 
 .leading {
   flex-direction: row-reverse;
-  width: $myWidth;
 }
 
 .trailing {
   flex-direction: row;
-  width: $myWidth;
 }
