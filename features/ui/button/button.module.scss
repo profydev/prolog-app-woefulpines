@@ -40,7 +40,87 @@ $myWidth: 109px;
 }
 
 .secondary {
-  color: color.$primary-50;
+  background-color: color.$primary-600;
+  color: white;
+
+  &:hover {
+    background-color: color.$primary-700;
+  }
+
+  &:focus {
+    background-color: color.$primary-600;
+    border-color: color.$primary-100;
+  }
+}
+
+.gray {
+  background-color: color.$primary-600;
+  color: white;
+
+  &:hover {
+    background-color: color.$primary-700;
+  }
+
+  &:focus {
+    background-color: color.$primary-600;
+    border-color: color.$primary-100;
+  }
+}
+
+.empty {
+  background-color: color.$primary-600;
+  color: white;
+
+  &:hover {
+    background-color: color.$primary-700;
+  }
+
+  &:focus {
+    background-color: color.$primary-600;
+    border-color: color.$primary-100;
+  }
+}
+
+.emptyGray {
+  background-color: color.$primary-600;
+  color: white;
+
+  &:hover {
+    background-color: color.$primary-700;
+  }
+
+  &:focus {
+    background-color: color.$primary-600;
+    border-color: color.$primary-100;
+  }
+}
+
+.error {
+  background-color: color.$primary-600;
+  color: white;
+
+  &:hover {
+    background-color: color.$primary-700;
+  }
+
+  &:focus {
+    background-color: color.$primary-600;
+    border-color: color.$primary-100;
+  }
+}
+
+.emptyError {
+  background-color: color.$primary-600;
+  color: white;
+
+  &:hover {
+    background-color: color.$primary-700;
+  }
+
+  &:focus {
+    background-color: color.$primary-600;
+    border-color: color.$primary-100;
+  }
 }
 
 /*Button size styling*/
