@@ -17,7 +17,7 @@ const Template: StoryFn<typeof Button> = ({
   textPlacement,
   children,
   iconSrc,
-  altText
+  altText,
 }) => (
   <div style={{ padding: 50 }}>
     <Button
@@ -38,7 +38,7 @@ Default.args = {
   buttonColor: ButtonColor.primary,
   textPlacement: TextPlacement.noText,
   children: "Label",
-  iconSrc: "/icons/react.svg"
+  iconSrc: "/icons/react.svg",
 };
 
 Default.parameters = {
