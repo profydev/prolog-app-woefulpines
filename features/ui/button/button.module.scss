@@ -37,60 +37,69 @@ $myWidth: 109px;
     background-color: color.$primary-600;
     border-color: color.$primary-100;
   }
+
+  &:disabled {
+    background-color: color.$primary-50;
+    filter: blur();
+  }
 }
 
 .secondary {
-  background-color: color.$primary-600;
-  color: white;
+  background-color: color.$primary-50;
+  color: color.$primary-700;
 
   &:hover {
-    background-color: color.$primary-700;
+    background-color: color.$primary-100;
   }
 
   &:focus {
-    background-color: color.$primary-600;
-    border-color: color.$primary-100;
+    background-color: color.$primary-50;
+    border-color: color.$primary-50;
+  }
+
+  &:disabled {
+    background-color: color.$primary-25;
   }
 }
 
 .gray {
-  background-color: color.$primary-600;
-  color: white;
+  background-color: white;
+  color: color.$grey-800;
 
   &:hover {
-    background-color: color.$primary-700;
+    background-color: color.$grey-50;
   }
 
   &:focus {
-    background-color: color.$primary-600;
-    border-color: color.$primary-100;
+    background-color: white;
+    border-color: color.$grey-300;
   }
 }
 
 .empty {
-  background-color: color.$primary-600;
-  color: white;
+  background-color: transparent;
+  color: color.$primary-700;
 
   &:hover {
-    background-color: color.$primary-700;
+    background-color: transparent;
   }
 
   &:focus {
     background-color: color.$primary-600;
-    border-color: color.$primary-100;
+    border-color: color.$grey-300;
   }
 }
 
 .emptyGray {
-  background-color: color.$primary-600;
+  background-color: transparent;
   color: white;
 
   &:hover {
-    background-color: color.$primary-700;
+    background-color: color.$grey-50;
   }
 
   &:focus {
-    background-color: color.$primary-600;
+    background-color: transparent;
     border-color: color.$primary-100;
   }
 }
